@@ -33,6 +33,8 @@ export class AppExceptionFilter<T extends HttpException>
     const ctx = host.switchToHttp();
     const request = ctx.getRequest<Request>();
     const response = ctx.getResponse<Response>();
+    console.log({ exception });
+
     const httpStatus =
       exception.getStatus() || HttpStatus.INTERNAL_SERVER_ERROR;
 

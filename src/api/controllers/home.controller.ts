@@ -1,11 +1,16 @@
 import { Controller, Get, Res } from '@nestjs/common';
 import { Response } from 'express';
 
-@Controller('/')
+@Controller()
 export class HomeController {
   @Get()
   home(@Res() res: Response) {
     const template = 'index';
     return res.render(template);
+  }
+
+  @Get('/favicon.ico')
+  favicon() {
+    return {};
   }
 }

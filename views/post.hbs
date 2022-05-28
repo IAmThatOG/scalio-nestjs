@@ -33,18 +33,21 @@
             </div>
         </div>
         {{/if}}
+        {{else}}
+        {{/if}}
+    </div>
 
-        <script>
-            function goToHomePage() {
-                const backBtn = document.getElementById('backBtn');
-                backBtn.addEventListener('click', async (e) => {
-                    e.preventDefault();
-                    window.location.pathname = '/';
-                })
-            }
+    <script>
+        function goToHomePage() {
+            const backBtn = document.getElementById('backBtn');
+            backBtn.addEventListener('click', async (e) => {
+                e.preventDefault();
+                window.location.pathname = '/';
+            })
+        }
 
-            goToHomePage();
-        </script>
+        goToHomePage();
+    </script>
 </body>
 
 </html>
