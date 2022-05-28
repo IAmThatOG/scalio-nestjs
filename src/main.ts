@@ -4,7 +4,6 @@ import { join } from 'path';
 import { ClientModule } from './api/api.module';
 import { AppExceptionFilter } from './api/filters/appException.filter';
 import configuration from './core/config/index';
-import { CoreModule } from './core/core.module';
 
 async function bootstrap() {
   const config = configuration();
