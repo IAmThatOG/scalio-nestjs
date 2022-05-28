@@ -13,8 +13,6 @@ import { PostService } from './services/implementation/post.service';
 
     //repositories
     { provide: IPostRepository, useClass: PostRepository },
-
-    PostService,
   ],
   exports: [IPostService],
 })
