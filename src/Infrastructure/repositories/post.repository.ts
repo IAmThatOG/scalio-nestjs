@@ -6,6 +6,7 @@ import { IPostRepository } from 'src/core/repositories/iPostRepository.interface
 export class PostRepository implements IPostRepository {
   static posts: Post[] = [];
   constructor() {
+    // load the json data from file
     if (PostRepository.posts.length === 0) {
       const filePath = join(
         process.cwd(),
